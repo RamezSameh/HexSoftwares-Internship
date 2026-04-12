@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Music Player</title>
+  <link rel="stylesheet" href="music-player.css" />
+</head>
+<body>
+  <main class="player-shell">
+    <h1>Web Music Player</h1>
+
+    <section class="playlist-panel">
+      <h2>Playlist</h2>
+      <ul id="playlist" class="playlist"></ul>
+    </section>
+
+    <section class="now-playing-panel">
+      <div class="track-info">
+        <div class="track-artwork">
+          <img id="track-artwork" src="https://via.placeholder.com/120x120?text=♫" alt="Album art" />
+        </div>
+        <div>
+          <p class="label">Now playing</p>
+          <h3 id="track-title">Select a song</h3>
+          <p id="track-artist">Artist</p>
+          <p id="track-status" class="track-status">Stopped</p>
+        </div>
+      </div>
+
+      <div class="mode-controls">
+        <button id="shuffleBtn" class="toggle-btn" aria-pressed="false" aria-label="Shuffle">🔀</button>
+        <button id="repeatBtn" class="toggle-btn" aria-pressed="false" aria-label="Repeat">🔁</button>
+      </div>
+
+      <div class="progress-wrapper">
+        <span id="current-time">0:00</span>
+        <div class="progress-bar" id="progress-bar">
+          <div class="progress-filled" id="progress-filled"></div>
+        </div>
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn" aria-label="Previous song">⏮️</button>
+        <button id="playPauseBtn" aria-label="Play or pause">►</button>
+        <button id="nextBtn" aria-label="Next song">⏭️</button>
+      </div>
+
+      <div class="volume-control">
+        <label for="volumeRange">Volume</label>
+        <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="0.8" />
+      </div>
+    </section>
+
+    <audio id="audio"></audio>
+  </main>
+
+  <script src="music-player.js"></script>
+</body>
+</html>
