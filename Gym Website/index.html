@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muscle Up Gym</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" id="brand">Muscle Up Gym</a>
+      <nav class="site-nav" id="siteNav">
+        <a href="#facilities" id="navFacilities">Facilities</a>
+        <a href="#services" id="navServices">Services</a>
+        <a href="#plans" id="navPlans">Membership</a>
+        <a href="#contact" id="navContact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <button id="langToggle" class="btn btn-secondary lang-btn" aria-label="Switch language">عربي</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow" id="heroEyebrow">Train hard. Live strong.</p>
+          <h1 id="heroTitle">Muscle Up Gym — 24/7 training in Cairo</h1>
+          <p class="hero-copy" id="heroCopy">Located on Nasseya Abdel Aziz Nassar Street, El-Nozha, Muscle Up Gym offers round-the-clock access, modern equipment, and expert coaching.</p>
+          <div class="hero-actions">
+            <a href="#plans" class="btn btn-primary" id="heroMembershipBtn">View Membership</a>
+            <a href="#facilities" class="btn btn-secondary" id="heroFacilitiesBtn">Explore Facilities</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-tag" id="heroTag">24/7 Access</div>
+          <ul class="hero-stats">
+            <li id="heroStat1"><strong>150+</strong> Machines</li>
+            <li id="heroStat2"><strong>30+</strong> Classes/week</li>
+            <li id="heroStat3"><strong>Expert</strong> Trainers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facilities" id="facilities">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" id="facilitiesLabel">Facilities</p>
+          <h2 id="facilitiesTitle">Everything you need for a complete workout</h2>
+        </div>
+        <div class="grid cards-grid">
+          <article class="card">
+            <h3 id="strengthTitle">Strength Zone</h3>
+            <p id="strengthDesc">Free weights, squat racks, and powerlifting platforms for serious gains.</p>
+          </article>
+          <article class="card">
+            <h3 id="cardioTitle">Cardio Studio</h3>
+            <p id="cardioDesc">Treadmills, bikes, rowers, and class-based HIIT sessions to keep your heart racing.</p>
+          </article>
+          <article class="card">
+            <h3 id="functionalTitle">Functional Area</h3>
+            <p id="functionalDesc">Battle ropes, rigs, kettlebells, and mobility zones built for dynamic training.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" id="servicesLabel">Services</p>
+          <h2 id="servicesTitle">Personalized support for every fitness goal</h2>
+        </div>
+        <div class="grid services-grid">
+          <article class="service-card">
+            <span class="service-icon">🏋️</span>
+            <h3 id="personalTrainingTitle">Personal Training</h3>
+            <p id="personalTrainingDesc">One-on-one coaching with certified trainers tailored to your progress.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🧘</span>
+            <h3 id="groupClassesTitle">Group Classes</h3>
+            <p id="groupClassesDesc">Yoga, spin, HIIT, and strength classes available day and night.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">🥗</span>
+            <h3 id="nutritionGuidanceTitle">Nutrition Guidance</h3>
+            <p id="nutritionGuidanceDesc">Meal planning and coaching that help you stay fueled and consistent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promo" id="offer">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" id="promoLabel">عرض خاص</p>
+          <h2 id="promoTitle">خصم 50% على كل اشتراكات الجيم لفترة محدودة</h2>
+        </div>
+        <div class="promo-card">
+          <p id="promoLine1">الشهر : <strong>250 جنيه</strong> بدل 450 جنيه</p>
+          <p id="promoLine2">الشهرين : <strong>450 جنيه</strong> بدل 900 جنيه</p>
+          <p id="promoLine3">3 شهور : <strong>750 جنيه</strong> بدل 1350 جنيه</p>
+          <p id="promoLine4">6 شهور : <strong>1000 جنيه</strong> بدل 2700 جنيه</p>
+          <p id="promoLine5">بشرط الاشتراك فى برنامج متابعة الأبطال تحت إشراف كابتن / إسماعيل و كابتن / أدم.</p>
+          <p id="promoLine6">والسعر لفترة محدودة 😉</p>
+          <p id="promoLine7">اشتراك الشهر متابعة بخصم 75% <strong>(512 جنيه)</strong> فقط للشهر.</p>
+          <p id="promoContactLine">للإشتراك و التفاصيل أرسل كلمة <strong>"أنا بطل"</strong> على رقم <a href="tel:01023161490" class="footer-link" id="promoContactNumber">010 2316 1490</a> أو اضغط على الرابط التالي.</p>
+          <a href="https://wa.me/201023161490?text=أنا%20بطل" class="btn btn-primary" id="promoWhatsAppBtn">رسالة واتساب</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plans" id="plans">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" id="plansLabel">Membership</p>
+          <h2 id="plansTitle">Flexible plans for every lifestyle</h2>
+        </div>
+        <div class="grid plans-grid">
+          <article class="plan-card">
+            <h3 id="plan1Title">1 شهر</h3>
+            <p class="plan-price" id="plan1Price">250ج<span>/شهر</span></p>
+            <ul>
+              <li id="plan1li1">الجيم مفتوح طوال الوقت</li>
+              <li id="plan1li2">دخول غرفة تبديل الملابس</li>
+              <li id="plan1li3">حصص جماعية</li>
+            </ul>
+            <button class="btn btn-primary" id="plan1Btn">اشتراك الشهر</button>
+          </article>
+          <article class="plan-card featured">
+            <span class="badge" id="plan2Badge">أفضل عرض</span>
+            <h3 id="plan2Title">2 شهر</h3>
+            <p class="plan-price" id="plan2Price">450ج<span>/شهرين</span></p>
+            <ul>
+              <li id="plan2li1">كل مميزات الاشتراك الشهري</li>
+              <li id="plan2li2">برنامج متابعة الأبطال</li>
+              <li id="plan2li3">دعم كابتن إسماعيل وكابتن أدم</li>
+            </ul>
+            <button class="btn btn-secondary" id="plan2Btn">اشتراك الشهرين</button>
+          </article>
+          <article class="plan-card">
+            <h3 id="plan3Title">3 شهور</h3>
+            <p class="plan-price" id="plan3Price">750ج<span>/3 شهور</span></p>
+            <ul>
+              <li id="plan3li1">تخفيض 50% على الاشتراك</li>
+              <li id="plan3li2">متابعة مستمرة</li>
+              <li id="plan3li3">جلسات ومتابعة احترافية</li>
+            </ul>
+            <button class="btn btn-primary" id="plan3Btn">اشتراك 3 شهور</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" id="testimonialsLabel">Testimonials</p>
+          <h2 id="testimonialsTitle">Real results from our members</h2>
+        </div>
+        <div class="testimonial-card">
+          <p id="testimonialText">“Muscle Up Gym gave me energy, confidence, and a training plan that actually works. The trainers are amazing.”</p>
+          <strong id="testimonialAuthor">– Emma, member</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <h2 id="footerTitle">Ready to start?</h2>
+        <p id="footerLine1">Visit us at Nasseya Abdel Aziz Nassar Street, El-Nozha, Cairo.</p>
+        <p id="footerLine2">Call us: <a href="tel:01023161490" class="footer-link" id="footerPhone">010 2316 1490</a></p>
+      </div>
+      <a href="tel:01023161490" class="btn btn-secondary" id="footerButton">Call Now</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
