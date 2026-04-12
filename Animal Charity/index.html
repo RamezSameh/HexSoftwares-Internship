@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope for Paws Charity</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Hope for Paws</a>
+      <nav class="site-nav">
+        <a href="#mission">Mission</a>
+        <a href="#programs">Programs</a>
+        <a href="#donate">Donate</a>
+      </nav>
+      <a href="#donate" class="btn btn-primary">Donate Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Save lives, one paw at a time</p>
+          <h1>Join our animal charity to rescue, heal, and protect furry friends</h1>
+          <p>Hope for Paws is a non-profit organization dedicated to rescuing strays, supporting shelters, and building a kinder future for animals.</p>
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-secondary">Our Programs</a>
+            <a href="#donate" class="btn btn-primary">Make a Donation</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Happy dog" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission" id="mission">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Mission</p>
+          <h2>Our goal is to create safe homes and brighter futures for animals</h2>
+        </div>
+        <div class="mission-grid">
+          <article class="mission-card">
+            <h3>Rescue</h3>
+            <p>We rescue abandoned and injured animals from streets and unsafe conditions.</p>
+          </article>
+          <article class="mission-card">
+            <h3>Rehabilitate</h3>
+            <p>Our veterinary partners provide urgent care, vaccination, and recovery support.</p>
+          </article>
+          <article class="mission-card">
+            <h3>Rehome</h3>
+            <p>We match rescued animals with loving families and support responsible adoption.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span>1,200+</span>
+          <p>Animals rescued</p>
+        </div>
+        <div class="stat-card">
+          <span>95%</span>
+          <p>Medical recovery rate</p>
+        </div>
+        <div class="stat-card">
+          <span>800+</span>
+          <p>Successful adoptions</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Programs</p>
+          <h2>Programs that support animals and their communities</h2>
+        </div>
+        <div class="grid programs-grid">
+          <article class="program-card">
+            <h3>Street Rescue</h3>
+            <p>Rapid response teams rescue injured or stranded animals in urban areas.</p>
+          </article>
+          <article class="program-card">
+            <h3>Community Vet Care</h3>
+            <p>Free vaccination clinics, sterilization drives, and wellness checks.</p>
+          </article>
+          <article class="program-card">
+            <h3>Education & Outreach</h3>
+            <p>Workshops and campaigns to teach compassion and responsible pet ownership.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donate" id="donate">
+      <div class="container donate-grid">
+        <div class="donate-copy">
+          <p class="section-label">Donate</p>
+          <h2>Support our mission and help animals in need today</h2>
+          <p>Your contribution funds rescue operations, medical care, shelter supplies, and adoption services.</p>
+          <ul class="donate-list">
+            <li>Quick and secure donations</li>
+            <li>Monthly supporter plans</li>
+            <li>Receive updates on rescued animals</li>
+          </ul>
+        </div>
+        <form class="donate-form" id="donateForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="amount">Donation Amount</label>
+          <select id="amount" name="amount" required>
+            <option value="">Choose an amount</option>
+            <option value="25">25 USD</option>
+            <option value="50">50 USD</option>
+            <option value="100">100 USD</option>
+            <option value="200">200 USD</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Donate Now</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>Hope for Paws Charity</h2>
+        <p>Building a safer, kinder world for animals with every gift.</p>
+      </div>
+      <p>Contact us: <a href="mailto:help@hopeforpaws.org">help@hopeforpaws.org</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
