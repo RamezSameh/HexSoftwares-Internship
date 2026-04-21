@@ -1,0 +1,81 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #64748b;
+    --success: #22c55e;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+.navbar { background: var(--card); padding: 1rem 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); sticky: top; }
+.nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 800; color: var(--text); }
+.logo span { color: var(--primary); }
+
+.hero { text-align: center; margin-bottom: 3rem; }
+.hero h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+
+.project-card { 
+    background: var(--card); border-radius: 12px; overflow: hidden; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;
+}
+.project-card:hover { transform: translateY(-5px); }
+.card-content { padding: 1.5rem; }
+.card-content h3 { margin-bottom: 1rem; }
+
+/* Progress Bar */
+.progress-container { background: #e2e8f0; border-radius: 10px; height: 10px; margin: 1rem 0; overflow: hidden; }
+.progress-bar { background: var(--primary); height: 100%; transition: width 0.3s ease; }
+
+.stats-row { display: flex; justify-content: space-between; font-weight: 600; font-size: 0.9rem; }
+
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); overflow-y: auto; }
+.modal-content { background: var(--card); margin: 5% auto; padding: 2rem; width: 90%; max-width: 500px; border-radius: 12px; position: relative; }
+.modal-large { max-width: 800px; }
+.close { position: absolute; right: 1.5rem; top: 1rem; font-size: 1.5rem; cursor: pointer; }
+
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+input, textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; }
+
+.btn { padding: 0.75rem 1.5rem; border-radius: 6px; border: none; font-weight: 600; cursor: pointer; transition: opacity 0.2s; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-secondary { background: var(--secondary); color: white; }
+.btn-block { width: 100%; background: var(--primary); color: white; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.contribution-section { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+.input-group { display: flex; gap: 10px; margin-top: 10px; }
+
+.update-section { margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+.update-item { background: #fff; border: 1px solid var(--border); padding: 1rem; border-radius: 6px; margin-bottom: 10px; }
+.update-date { font-size: 0.8rem; color: var(--secondary); }
+.add-update { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 10px; }
+
+/* Notification & Overlay */
+.payment-overlay { 
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(255,255,255,0.9); z-index: 2000; justify-content: center; align-items: center; 
+}
+.loader-content { text-align: center; }
+.spinner { 
+    width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid var(--primary); 
+    border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 10px; 
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.notification {
+    position: fixed; bottom: 20px; right: 20px; padding: 1rem 2rem;
+    background: var(--text); color: white; border-radius: 6px;
+    transform: translateY(150%); transition: transform 0.3s; z-index: 3000;
+}
+.notification.show { transform: translateY(0); }
+.notification.success { background: var(--success); }

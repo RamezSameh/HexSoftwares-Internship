@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnityFund | Crowdfunding Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Unity<span>Fund</span></h1>
+            <button class="btn btn-primary" id="openCreateModal">🚀 Start a Project</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h2>Support amazing projects.</h2>
+            <p>Discover and fund the next big thing or start your own journey.</p>
+        </header>
+
+        <div id="projectGrid" class="project-grid">
+            <!-- Projects will be injected here -->
+        </div>
+    </main>
+
+    <!-- Create Project Modal -->
+    <div id="createModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCreate">&times;</span>
+            <h2>Create New Project</h2>
+            <form id="projectForm">
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input type="text" id="projTitle" required placeholder="e.g. Eco-friendly Water Bottle">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="projDesc" required placeholder="Describe your mission..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Funding Goal ($)</label>
+                    <input type="number" id="projGoal" required min="10">
+                </div>
+                <button type="submit" class="btn btn-block">Launch Project</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close" id="closeDetail">&times;</span>
+            <div id="detailView"></div>
+
+            <div class="contribution-section">
+                <h3>Back this project</h3>
+                <div class="input-group">
+                    <input type="number" id="contributeAmount" placeholder="Amount ($)" min="1">
+                    <button class="btn btn-primary" id="confirmPayment">Contribute</button>
+                </div>
+            </div>
+
+            <div class="update-section">
+                <h3>Project Updates</h3>
+                <div id="updateList" class="update-list"></div>
+                <div class="add-update">
+                    <textarea id="updateText" placeholder="Post a new update..."></textarea>
+                    <button class="btn btn-secondary" id="postUpdate">Post Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Processing Overlay -->
+    <div id="paymentOverlay" class="payment-overlay">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Processing Payment...</p>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
